@@ -9,40 +9,47 @@
 method="POST">
  
 <label>
-Текстовое поле:<br />
+Имя:<br />
 <input name="field-name-1"
 value="начальное значение" />
 </label><br />
  
 <label>
-Текстовое поле email:<br />
+Email:<br />
 <input name="field-email"
 value="test@example.com"
 type="email" />
 </label><br />
  
 <label>
-Текстовое поле даты:<br />
+Дата:<br />
 <input name="field-date"
 value="2019-08-13"
 type="date" />
 </label><br />
  
+<label>
+Выберите пол:<br />
 <label><input type="radio" checked="checked"
 name="radio-group-1" value="Значение1" />
 MALE </label>
 <label><input type="radio"
 name="radio-group-1" value="Значение2" />
 FEMALE </label><br />
+ </label>
 
+<label>
+Кол-во конечностей:<br />
 <label><input type="radio" checked="checked"
 name="radio-group-1" value="Значение1" />
 4 </label>
 <label><input type="radio"
 name="radio-group-1" value="Значение2" />
 5 </label><br />
+ </label> 
  
-<br />
+<label>
+Cверхспособности:<br />
 <select name="field-name-4[]"
 multiple="multiple">
 <option value="Значение1">Бессмертие</option>
@@ -52,12 +59,12 @@ multiple="multiple">
 </label><br />
 
 <label>
-Многострочное текстовое поле:<br />
-<textarea name="field-name-2">начальное значение</textarea>
+Биография:<br />
+<textarea name="field-name-2"></textarea>
 </label><br />
-<label>
 
-Чекбокс:<br />
+<label>
+С контрактом ознакомлен(а):<br />
 <label><input type="checkbox" checked="checked"
 name="check-1" />
 </label><br />
