@@ -1,1 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="lesson2.css">
+</head>
+<body>
+<header class="header">
+    <div class="header_logo">
+        <div class="logo">
+            <img class="logo_img" src="https://avatars.mds.yandex.net/i?id=732d6d06d4c85b96e1ec6a166b13518c-4277039-images-thumbs&n=13" alt="">
+        </div>
+        <div class="logo_name">Урок номер 2</div>
+    </div>
+</header>
+<div class="container">
+    <nav class="menu">
+        <ul class="menu_list">
+            <li><a href="#" class="menu_item">Ссылка 1</a></li>
+            <li><a href="#" class="menu_item">Ссылка 2</a></li>
+            <li><a href="#" class="menu_item">Ссылка 3</a></li>
+        </ul>
+    </nav>
+    <h1 id="top">ЧЕРКЕС /25 группа</h1>
+    <ol>
+        <li>
+            <a href="http://kubsu.ru">Абсолютная гиперссылка на главную страницу сайта КубГУ</a>
+        </li>
+        <li>
+            <a href="https://kubsu.ru/">Абсолютная гиперссылка на главную страницу сайта КубГУ в протоколе https</a>
+        </li>
+        <li>
+            <a href="ftp://Temp/file.txt"> Ссылка FTP без авторизации </a>
+        </li>
+        <li>
+            <a href="ftp://RedAlex50:pass123@tavalik.ru/Temp/file.txt"> Ссылка FTP с авторизацией </a>
+        </li>
+        <li>
+            <a href="https://webref.ru/layout/html5-css3/link/anchor#views-similar-block">
+                Ссылка на фрагмент страницы некоторого сайта:
+            </a>
+        </li>
+        <li>
+            <a href="#form"> Ссылка на фрагмент текущей страницы: </a>
+        </li>
+        <li>
+            <a href=" http://example.com?user=redalex50&pass=qwerty123"> Ссылка с двумя параметрами в URL </a>
+        </li>
+        <li>
+            <ul>
+                <li>
+                    <a href="index.html" title="Главная"> Главная</a>
+                </li>
+                <li>
+                    <a href="#top" title="Начало"> Начало страницы </a>
+                </li>
+                <li>
+                    <a href="#form" title="Форма"> Форма </a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a> Ссылка без href</a>
+        </li>
+        <li>
+            <a href=""> Ссылка с пустым href </a>
+        </li>
+        <li>
+            <a href="http://kubsu.ru/" rel="nofollow"> Ссылка, по которой запрещен переход поисковикам</a>
+        </li>
+        <li>
+            <!-- noindex --> <a href="http://kubsu.ru/">Ссылка, запрещенная для индексации поисковиками </a><!--/noindex -->
+        </li>
+        <li>
+            <p>
+                Ссылка на <a href="https://ru.wikipedia.org/wiki/">Википедию</a>  внутри абзаца
+            </p>
+        </li>
+        <li>
+            <a href="https://cdn.fishki.net/upload/post/201505/11/1528959/262785-2560x1600.jpg">Сылка на изображение</a>
+        </li>
+        <li>
+            Ссылка из прямоугольных и круглых областей картинки
+            <p>
+                <img src="https://www.kubsu.ru/sites/all/themes/portal_kubsu/logo.png" usemap="#image-map" alt="500">
+                <map name="image-map">
+                    <area alt="КубГУ" title="КубГУ" href="https://kubsu.ru/" coords="57,58,26" shape="circle">
+                    <area alt="Факультеты" title="Факультеты" href="https://kubsu.ru/ru/university/structure"
+                          coords="6,58,25,60,26,42,41,27,66,24,84,30,92,47,92,61,117,58,112,27,99,4,51,0,20,9,-1,47,4,51,4,41,2,45"
+                          shape="poly">
+                </map>
+            </p>
+        </li>
 
+        <li>
+            <a href="1.html">Относительная ссылка на страницу в текущем каталоге</a>
+        </li>
+
+        <li>
+            <a href="about/2.html"> Относительная ссылка на страницу в каталоге about</a>
+        </li>
+        <li>
+            <a href="../3.html"> Относительная ссылка на страницу в каталоге уровнем выше текущего </a>
+        </li>
+        <li>
+            <a href="../../4.html"> Относительная ссылка на страницу в каталоге двумя уровнями выше </a>
+        </li>
+        <li>
+            <a href="https://clck.ru/yniry"> Сокращенная ссылка на главную </a>
+        </li>
+        <li>
+            <a href="https://clck.ru/ynjbJ"> Сокращенная ссылка на внутреннюю </a>
+        </li>
+    </ol>
+    <hr>
+    <table>
+        <tbody>
+        <tr>
+            <th>Столбец 1</th>
+            <th>Столбец 2</th>
+            <th>Столбец 3</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td colspan="2">8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td colspan="2">10</td>>
+        </tr>
+        </tbody>
+    </table>
+    <hr>
+    <form id="form" action="" method="POST">
+        <label for="name">Name</label><br>
+        <input id='name' type="text" placeholder='Sergey'><br>
+        <label for='mail'>E-mail</label><br>
+        <input id="mail" type="email"><br>
+        <label for='date'>Date</label><br>
+        <input type="date" id="date"><br>
+        <div>Gender</div><br>
+        <input type="radio" name="gender" checked="checked" value="man" id="man">
+        <label for='man'>Man</label>
+        <input type="radio" name="gender" value="woman" id="woman">
+        <label for='woman'>Woman</label><br>
+        <div>Legs:</div><br>
+        <input type="radio" name="legs" value="1" id="one">
+        <label for='one'>One</label>
+        <input type="radio" name="legs" checked="checked" value="2" id="two">
+        <label for='two'>Two</label><br>
+        <label for="super">Superpower</label><br>
+        <select id="super" multiple="multiple" >
+            <option >бессмертие</option>
+            <option >левитация</option>
+            <option >прохождение сквозь стены</option>
+        </select><br>
+        <label for="bio">Biograth</label><br>
+        <textarea id="bio">Начните писать биографию</textarea><br>
+
+        <input id="confirm" type="checkbox">
+        <label for="confirm"> с контрактом ознакомлен (а)</label><br>
+        <button type="submit">Отправить</button>
+    </form>
+</div>
+<footer class="footer">
+    <p class="footer_content">(c) Кононенко Сергей 2022</p>
+</footer>
+
+</body>
+</html>
