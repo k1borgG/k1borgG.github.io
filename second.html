@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="lesson2.css">
+    <title>Lesson 2</title>
+    <link rel="stylesheet" href="second.css">
 </head>
+
 <body>
 <header class="header">
     <div class="header_logo">
         <div class="logo">
-            <img class="logo_img" src="https://avatars.mds.yandex.net/i?id=732d6d06d4c85b96e1ec6a166b13518c-4277039-images-thumbs&n=13" alt="">
+            <img class="logo_img" src="https://www.fonstola.ru/images/202010/fonstola.ru_411989.jpg" alt="моё лого">
         </div>
         <div class="logo_name">Урок номер 2</div>
     </div>
 </header>
+
 <div class="container">
     <nav class="menu">
         <ul class="menu_list">
@@ -22,7 +25,9 @@
             <li><a href="#" class="menu_item">Ссылка 3</a></li>
         </ul>
     </nav>
-    <h1 id="top">ЧЕРКЕС /25 группа</h1>
+
+    <h1 id="top">Альберт Черкасов|25 группа</h1>
+
     <ol>
         <li>
             <a href="http://kubsu.ru">Абсолютная гиперссылка на главную страницу сайта КубГУ</a>
@@ -34,7 +39,7 @@
             <a href="ftp://Temp/file.txt"> Ссылка FTP без авторизации </a>
         </li>
         <li>
-            <a href="ftp://RedAlex50:pass123@tavalik.ru/Temp/file.txt"> Ссылка FTP с авторизацией </a>
+            <a href="ftp://user:pass123@example.ru/Temp/file.txt"> Ссылка FTP с авторизацией </a>
         </li>
         <li>
             <a href="https://webref.ru/layout/html5-css3/link/anchor#views-similar-block">
@@ -45,7 +50,7 @@
             <a href="#form"> Ссылка на фрагмент текущей страницы: </a>
         </li>
         <li>
-            <a href=" http://example.com?user=redalex50&pass=qwerty123"> Ссылка с двумя параметрами в URL </a>
+            <a href="http://example.com?user=redalex50&pass=qwerty123"> Ссылка с двумя параметрами в URL </a>
         </li>
         <li>
             <ul>
@@ -78,7 +83,7 @@
             </p>
         </li>
         <li>
-            <a href="https://cdn.fishki.net/upload/post/201505/11/1528959/262785-2560x1600.jpg">Сылка на изображение</a>
+            <a href="https://www.fonstola.ru/images/202010/fonstola.ru_411989.jpg">Сылка на изображение</a>
         </li>
         <li>
             Ссылка из прямоугольных и круглых областей картинки
@@ -92,11 +97,9 @@
                 </map>
             </p>
         </li>
-
         <li>
             <a href="1.html">Относительная ссылка на страницу в текущем каталоге</a>
         </li>
-
         <li>
             <a href="about/2.html"> Относительная ссылка на страницу в каталоге about</a>
         </li>
@@ -107,12 +110,13 @@
             <a href="../../4.html"> Относительная ссылка на страницу в каталоге двумя уровнями выше </a>
         </li>
         <li>
-            <a href="https://clck.ru/yniry"> Сокращенная ссылка на главную </a>
+            <a href="/kubsu.ru"> Сокращенная ссылка на главную </a>
         </li>
         <li>
-            <a href="https://clck.ru/ynjbJ"> Сокращенная ссылка на внутреннюю </a>
+            <a href=”/about”> Сокращенная ссылка на внутреннюю </a>
         </li>
     </ol>
+
     <hr>
     <table>
         <tbody>
@@ -141,40 +145,40 @@
         </tr>
         </tbody>
     </table>
+
     <hr>
     <form id="form" action="" method="POST">
-        <label for="name">Name</label><br>
-        <input id='name' type="text" placeholder='Sergey'><br>
-        <label for='mail'>E-mail</label><br>
-        <input id="mail" type="email"><br>
-        <label for='date'>Date</label><br>
-        <input type="date" id="date"><br>
-        <div>Gender</div><br>
+        <label for="name">Name:
+        <input id='name' type="text" name="field-name-1"></label><br>
+        <label for='mail'>E-mail:
+        <input id="mail" name="field-email" value="test@example.com" type="email"></label><br>
+        <label for='date'>Date:<br>
+        <input name="field-date" value="2022-09-05" type="date" id="date"></label><br>
+        <div>Choose your Gender:</div>
         <input type="radio" name="gender" checked="checked" value="man" id="man">
-        <label for='man'>Man</label>
+        <label for='man'>Male</label>
         <input type="radio" name="gender" value="woman" id="woman">
-        <label for='woman'>Woman</label><br>
-        <div>Legs:</div><br>
+        <label for='woman'>Female</label><br>
+        <div>Count of Legs:</div>
         <input type="radio" name="legs" value="1" id="one">
         <label for='one'>One</label>
         <input type="radio" name="legs" checked="checked" value="2" id="two">
         <label for='two'>Two</label><br>
-        <label for="super">Superpower</label><br>
+        <label for="super">Superpowers:</label><br>
         <select id="super" multiple="multiple" >
             <option >бессмертие</option>
             <option >левитация</option>
-            <option >прохождение сквозь стены</option>
+            <option >понять диффуры</option>
         </select><br>
         <label for="bio">Biograth</label><br>
-        <textarea id="bio">Начните писать биографию</textarea><br>
-
-        <input id="confirm" type="checkbox">
-        <label for="confirm"> с контрактом ознакомлен (а)</label><br>
+        <textarea id="bio"></textarea><br>
+        <label for="confirm"> с контрактом ознакомлен(а):</label><input id="confirm" type="checkbox"><br>
         <button type="submit">Отправить</button>
     </form>
 </div>
+
 <footer class="footer">
-    <p class="footer_content">(c) Кононенко Сергей 2022</p>
+    <p class="footer_content">(c) Черкасов Альберт 2022</p>
 </footer>
 
 </body>
