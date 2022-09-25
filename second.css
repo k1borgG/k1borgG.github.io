@@ -1,18 +1,21 @@
 .header{
     width: 100%;
 }
+
 .header_logo{
     display: flex;
     align-items: center;
 }
+
 .logo{
     flex-basis: 100px;
     height: 100px;
-    border-radius: 50%;
+    border-radius: 100%;
     margin-right: 20px;
-    position: relative;
+    position: sticky;
     overflow: hidden;
 }
+
 .logo_img{
     position: absolute;
     top: 0;
@@ -22,28 +25,33 @@
     object-fit: contain;
     object-position: center;
 }
+
 .container{
-    margin:0 auto;
+    margin: auto;
     max-width: 960px;
 }
+
 .menu_list{
     display: flex;
-    gap:15px;
-}
+    gap: 15px;
+}   
+
 ul{
     list-style-type: none;
 }
+
 table{
     border-collapse: collapse;
 }
+
 td{
     text-align: center;
 }
 
 table tr:nth-child(even){
-    background: lightgrey;
+    background: rgb(242, 92, 92);
 }
+
 .footer{
     width: 100%;
 }
-
