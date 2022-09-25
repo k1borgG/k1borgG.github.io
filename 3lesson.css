@@ -27,7 +27,7 @@
 }
 
 .container{
-    margin: auto;
+    margin:0 auto;
     max-width: 960px;
     display: flex;
     flex-direction: column;
@@ -39,8 +39,8 @@
 
 .menu_list{
     display: flex;
-    gap: 15px;
-}   
+    gap:15px;
+}
 
 ul{
     list-style-type: none;
@@ -60,7 +60,7 @@ td{
 }
 
 table tr:nth-child(even){
-    background: rgb(242, 92, 92);
+    background: rgb(243, 10, 10);
 }
 
 .footer{
