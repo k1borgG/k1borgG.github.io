@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title lesson5</title>
+</head>
+<body>
+    <form>
+    <input required type="number" placeholder="Цена товара" name="cost"><br>
+    <input  placeholder="Кол-во товара" name="count"><br>
+    <button name="sum" onclick="return Summa()">Итог</button>
+    </form>
+    <p>Итоговая стоимость: <span id="sum">0</span> рублей</p>
+    <script src="lesson5.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title lesson6</title>
+</head>
+<body>
+    <form>
+    <select name="my_select" >
+        <option value="1">Цемент 5кг</option>
+        <option value="2">Кирпич 100кг</option>
+        <option value="3">Плитка 10кг</option>
+    </select> 
+    
+    <input  placeholder="Кол-во товара" name="count" value="0" required type="number"><br>
+
+    <div id="radios" style="display:none">
+        <label>
+            <input type="radio" name="opt_names" value="opt_1">Силикатный
+        </label>
+        <label>
+            <input type="radio" name="opt_names" value="opt_2">Клинкерный
+        </label>
+    </div>
+
+    <div id="checkboxes" style="display:none">
+        <label>
+            <input type="checkbox" name="check_1"> C Установкой
+        </label>
+    </div>
+    </form>
+    <p>Итоговая стоимость: <span id="sum">0</span> рублей</p>
+    <script src="lesson6.js" defer></script>
+</body>
+</html>

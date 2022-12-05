@@ -1,0 +1,28 @@
+body {
+    background: url("img/pattern.png");
+}
+table tr:nth-child(even){
+    background: rgb(91, 101, 232);
+}
+
+@media (min-width: 481px){
+    .container {
+        margin: 0 auto;
+        max-width: 960px;
+        display: flex;
+        flex-direction: column;
+    }
+    #form {
+        order: 2;
+    }
+    .table {
+        order: 1;
+    }
+    .header_lg {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    .menu {
+        flex-direction: row;
+    }
+}
